@@ -17,14 +17,21 @@ class Car{
         return $this->brand;
     }
 }
+class Watch{
+    private $watch_name = "Skeleton";
+
+    private function set_watch_name($watch_name){
+        $this->watch_name = $watch_name;
+    }
+    private function get_watch_name(){
+        echo "<br> $this->watch_name";
+    }
+}
 
 echo "<h2>";
-$car1 = new Car;
-$car1->set_name("Chiron");
-echo $car1->get_name()." By  ";
+$car = new Car();
+$car->name = "supercar";
+echo $car->name;
 
-$car1->set_brand("Buggati");
-echo $car1->get_brand();
-echo "<br> $car1->name by $car1->brand";
 echo "</h2>";
 ?>
