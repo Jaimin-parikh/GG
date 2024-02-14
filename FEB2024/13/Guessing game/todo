@@ -1,0 +1,7 @@
+1.)generate an integer
+2.)take input
+3.)check if it's true
+    3.1)if it is print congrats
+    3.2)otherwise print the entered number and give hint to the user
+4.)keep track of user's lives
+

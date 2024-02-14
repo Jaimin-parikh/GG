@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+
+            $(".hide").click(function(){
+                $(".hide_me").hide("slow");
+            });
+            $("#show").click(function(){
+                $(".hdie_me").show();
+            });
+
+            $(".show").click(function(){
+                alert(` You've entered ${this.value} `);
+            });
+        });    
+
+        </script> 
+</head>
+<body><h2>
+    <br><br>
+    <div class="hide_me">Hey Hide me</div><br>
+    <input type="radio" name="Gender" class = "show" value="male">Male
+    <input type="radio" name="Gender" class = "show" value="female">Female<br>
+    <input type="button" value="Hide" class = "hide" id = "show">
+    <br>
+    <!-- <input type="button" value="ShowGender" class = "showGender"> -->
+    </h2>
+   
+</body>
+</html>
